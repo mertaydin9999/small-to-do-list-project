@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+body{
+    background-color: #7286D3 !important;
+    font-family: 'Permanent Marker', cursive !important;
+}
+
+.head{
+    font-size: 8rem;
+    color: #E5E0FF;
+}
+.head:hover{
+    color: #FFFBAC;
+}
+.btn-kaydet{
+    color: #FFF2F2 !important;
+    font-size: 1.5rem !important;
+    font-family: 'Permanent Marker', cursive !important;
+}
+.btn-kaydet:hover{
+    color: #FFFBAC !important;
+}
+.gorunmez{
+    display: none;
+}
+.gorunmez2{
+    display: none;
+}
+i{
+    color: #7286D3;
+}
+i:hover{
+    color: #FD8A8A !important;
+}

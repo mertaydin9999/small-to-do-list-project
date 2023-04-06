@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/abde8ba19e.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+  </head>
+    <title>Document</title>
+</head>
+<body>
+    <main class="container text-center">
+        <!--ALERT BOLUMU-------------------  -->
+        <div id="check" class="gorunmez alert alert-success position-absolute mt-2 mx-2 top-0 end-0 alert-kaydet " role="alert">
+            Etkinliginiz Kaydedildi &#9989;
+        </div>
+        <div id="alertTemizle" class="gorunmez2 alert alert-danger position-absolute mt-2 mx-2 top-0 end-0 alert-kaydet " role="alert">
+            Tum etkinlikler silindi
+        </div>
+        <div id="alertSil" class="gorunmez2 alert alert-danger position-absolute mt-2 mx-2 top-0 end-0 alert-kaydet " role="alert">
+            Bir etkinlik silindi 
+        </div>
+        
+        
+        <!--BUYUK HEADER IN BULUNDUGU KISIM------------------  -->
+        <h1 class="head mb-5 text-decoration-underline">TO DO LIST</h1>
+        <section class="mx-5">
+            <div class="row ms-5">
+                <div class="col-8">
+                    <input id="text-area" class="form-control form-control-lg mb-5" type="text" placeholder="Planladiginiz etkinligi kaydedebilirsiniz" aria-label=".form-control-lg example">
+                </div>
+                <!--ETKINLIK EKLEME VE SILME FONKSIYONLARININ OLDUGU BOLUM-->
+                <div class="col-1 me-4">
+                    <button onclick="ekleme()" type="button" class="btn btn-kaydet border border-rounded">Kaydet</button>
+                </div>
+                <div class="col-1 ms-5">
+                    <button onclick="temizle()" type="button" class="btn btn-kaydet border border-rounded">Temizle</button>
+                </div>
+            </div>
+        </section>
+        <!-- BU KISIMDA HER BIR LI BIR SATIRI VE ETKINLIGI TEMSIL EDIYOR-->
+        <section class="mx-5">
+            <article id="listeler" class="mx-5">
+                <ul id="list" class="list-group">
+                    <li onclick="ustunuCiz(this)" class=" list-group-item" id="liast-li">
+                        <div class="row">
+                            <p class="p col-11 text-start">MATEMATIK</p>
+                            <a onclick="sil(this)" class="col-1"><i class="fa-solid fa-trash float-end mx-5"></i></a> 
+                        </div>
+                    </li> 
+                    <li onclick="ustunuCiz(this)" class="list-group-item" id="liast-li">
+                        <div class="row">
+                            <p class="p col text-start">SPORA GIT</p>
+                            <a onclick="sil(this)" class="col-1"><i class="fa-solid fa-trash float-end mx-5"></i></a>
+                        </div>
+                    </li> 
+                    <li onclick="ustunuCiz(this)" class="list-group-item" id="liast-li">
+                        <div class="row">
+                            <p class="p col text-start">OGLE YEMEGI</p>
+                            <a onclick="sil(this)" class="col-1"><i class="fa-solid fa-trash float-end mx-5"></i></a>
+                        </div>
+                    </li> 
+                    <li onclick="ustunuCiz(this)" class="list-group-item" id="liast-li">
+                        <div class="row">
+                            <p class="col text-start">URETKEN AKADEMI</p>
+                            <a onclick="sil(this)" class="col-1"><i class="fa-solid fa-trash float-end mx-5"></i></a>
+                        </div>
+                    </li> 
+                    <li onclick="ustunuCiz(this)" class="list-group-item" id="liast-li">
+                        <div class="row">
+                            <p class="col text-start">FILM IZLE</p>
+                            <a onclick="sil(this)" class="col-1"><i class="fa-solid fa-trash float-end mx-5"></i></a>
+                        </div>
+                    </li> 
+                </ul>
+            </article>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+</body>
+</html>
